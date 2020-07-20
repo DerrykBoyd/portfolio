@@ -5,6 +5,7 @@ self.addEventListener('install', (event) => {
         './',
         "./site.webmanifest",
         './index.html',
+        "./404.html",
         './css/',
         './css/main.css',
         './css/normalize.css',
@@ -36,7 +37,12 @@ self.addEventListener('fetch', (event) => {
         return response;
       });
     }).catch(() => {
-      return caches.match('./icon-512x512.png');
+      console.log('not found?')
+      return caches.match('./404.html');
     })
   );
 });
+
+self.onerror = (e) => {
+  console.log(e)
+}
