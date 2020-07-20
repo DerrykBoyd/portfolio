@@ -13,13 +13,14 @@ self.addEventListener('install', (event) => {
         './js/vendor/modernizr-3.11.2.min.js',
         './js/main.js',
         './js/plugins.js',
-        './icon-72x72.png',
-        './icon-96x96.png',
-        './icon-128x128.png',
-        './icon-144x144.png',
-        './icon-152x152.png',
-        './icon-192x192.png',
-        './icon-512x512.png',
+        './img/',
+        './img/icon-72x72.png',
+        './img/icon-96x96.png',
+        './img/icon-128x128.png',
+        './img/icon-144x144.png',
+        './img/icon-152x152.png',
+        './img/icon-192x192.png',
+        './img/icon-512x512.png',
       ]);
     })
   );
