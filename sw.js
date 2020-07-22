@@ -8,6 +8,7 @@ self.addEventListener('install', (event) => {
         "./404.html",
         './css/',
         './css/main.css',
+        './css/home.css',
         './css/normalize.css',
         './js/',
         './js/vendor/modernizr-3.11.2.min.js',
