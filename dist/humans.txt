@@ -1,0 +1,13 @@
+
+# TEAM
+
+    Developer: Derryk Boyd
+    Contact: derrykboyd [at] gmail.com
+    Twitter: @derrykboyd
+    GitHub: @dboydgit
+    From: Edmonton, AB, Canada
+
+# SITE
+
+    Tech: CSS3, HTML5, Javascript
+    Tools: VSCode, Inkscape
