@@ -36,17 +36,6 @@
   <script src="/modernizr-3.11.2.min.659b9f56.js"></script>
   <script src="/plugins.7f97feee.js"></script>
   <script src="/main.fb6bbcaf.js"></script>
-  <!-- Register Service Worker -->
-  <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register("/sw.js").then(function (reg) {
-    // registration worked
-    console.log('Registration succeeded.');
-    console.log(reg);
-  }).catch(function (error) {
-    // registration failed
-    console.log('Registration failed with ' + error);
-  });
-}</script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
