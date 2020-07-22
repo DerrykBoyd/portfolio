@@ -117,8 +117,31 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/main.js":[function(require,module,exports) {
+})({"sw.js":[function(require,module,exports) {
+self.addEventListener('install', function (event) {
+  event.waitUntil(caches.open('v1').then(function (cache) {
+    return cache.addAll(['./', "./site.webmanifest", './index.html', "./404.html", './css/', './css/main.css', './css/home.css', './css/normalize.css', './js/', './js/vendor/modernizr-3.11.2.min.js', './js/main.js', './js/plugins.js', './img/', './img/icon-72x72.png', './img/icon-96x96.png', './img/icon-128x128.png', './img/icon-144x144.png', './img/icon-152x152.png', './img/icon-192x192.png', './img/icon-512x512.png']);
+  }));
+});
+self.addEventListener('fetch', function (event) {
+  if (event.request.method === "POST") return;
+  event.respondWith(caches.match(event.request).then(function (resp) {
+    return resp || fetch(event.request).then(function (response) {
+      var responseClone = response.clone();
+      caches.open('v1').then(function (cache) {
+        cache.put(event.request, responseClone);
+      });
+      return response;
+    });
+  }).catch(function () {
+    console.log('not found?');
+    return caches.match('./404.html');
+  }));
+});
 
+self.onerror = function (e) {
+  console.log(e);
+};
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34203" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40379" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -323,5 +346,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/main.js"], null)
-//# sourceMappingURL=/main.fb6bbcaf.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","sw.js"], null)
+//# sourceMappingURL=/sw.js.map

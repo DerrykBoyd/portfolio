@@ -9,8 +9,8 @@
   "license": "MIT",
   "author": "Derryk Boyd",
   "scripts": {
-    "build": "parcel build *.html",
-    "dev": "parcel index.html --open",
+    "build": "parcel build *.html -d docs",
+    "dev": "parcel index.html --open -d docs",
     "start": "npm run build && npm run dev"
   },
   "devDependencies": {
