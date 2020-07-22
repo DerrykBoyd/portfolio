@@ -10,7 +10,7 @@
   "author": "Derryk Boyd",
   "scripts": {
     "build": "parcel build *.html -d docs --public-url /portfolio/",
-    "dev": "parcel index.html --open -d docs",
+    "dev": "parcel index.html -d docs --open --public-url /portfolio/",
     "start": "npm run build && npm run dev"
   },
   "devDependencies": {
