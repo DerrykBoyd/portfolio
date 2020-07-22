@@ -9,7 +9,7 @@
   "license": "MIT",
   "author": "Derryk Boyd",
   "scripts": {
-    "build": "parcel build *.html -d docs",
+    "build": "parcel build *.html -d docs --public-url /portfolio/",
     "dev": "parcel index.html --open -d docs",
     "start": "npm run build && npm run dev"
   },
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/dboydgit/portfolio/issues"
   },
-  "homepage": "https://github.com/dboydgit/portfolio#readme"
+  "homepage": "http://dboydgit.github.io/portfolio"
 }
