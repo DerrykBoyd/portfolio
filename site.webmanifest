@@ -38,7 +38,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/portfolio",
+  "start_url": "/portfolio/",
   "background_color": "#fafafa",
   "theme_color": "#7e57c2",
   "display": "minimal-ui",
