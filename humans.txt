@@ -1,15 +1,13 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Developer: Derryk Boyd
+    Contact: derrykboyd [at] gmail.com
+    Twitter: @derrykboyd
+    GitHub: @dboydgit
+    From: Edmonton, AB, Canada
 
-# THANKS
+# SITE
 
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Tech: CSS3, HTML5, Javascript
+    Tools: VSCode, Inkscape
