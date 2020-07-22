@@ -1,0 +1,15 @@
+/* add the code bg */
+body {
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url('/img/code-bg.svg');
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+/* test img style */
+#test-img {
+  width: 200px;
+  height: 200px;
+}
