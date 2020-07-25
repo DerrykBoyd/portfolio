@@ -12,7 +12,20 @@
   --secondary-light: #B4FFFF;
   --secondary-dark: #4BACB8;
 }
-/* Add Roboto font and variables */
+/* Animation */
+.typewriter{
+  animation: typewriter 2s steps(20, end),
+             blinkTextCursor 750ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: var(--primary);}
+  to{border-right-color: transparent;}
+}
+/* Add Roboto font and imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Debugging */
@@ -34,23 +47,46 @@ body {
 
 nav {
   text-align: center;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-link {
+  height: 2.5rem;
+  margin: 0.5rem;
 }
 
 .hero {
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(2, 100px);
-  grid-auto-rows: auto;
   align-items: center;
   justify-items: center;
-  padding: 0.5rem;
-  width: calc(100% - 1rem);
+  padding: 1rem;
+  width: calc(100% - 2rem);
 }
 
 .hero-text {
-  font-size: x-large;
+  font-size: 1.25rem;
   text-align: center;
+  margin: 0;
+}
+
+.typewriter {
+  border-right: 3px solid var(--primary);
+  height: 4rem;
+  font-size: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #hi-bitmoji {
@@ -61,6 +97,12 @@ nav {
 @media screen and (max-width: 450px) {
   .hero {
     grid-template-columns: 1fr;
+  }
+  nav {
+    justify-content: flex-end;
+  }
+  .nav-title {
+    display: none;
   }
 }
 

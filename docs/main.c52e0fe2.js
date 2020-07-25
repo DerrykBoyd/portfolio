@@ -189,12 +189,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/animations.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/home.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./variables.css":"css/variables.css","/home/derryk/Programming/portfolio/img/code-bg.svg":[["code-bg.5a39c725.svg","img/code-bg.svg"],"img/code-bg.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/main.css":[function(require,module,exports) {
+},{"./variables.css":"css/variables.css","./animations.css":"css/animations.css","/home/derryk/Programming/portfolio/img/code-bg.svg":[["code-bg.5a39c725.svg","img/code-bg.svg"],"img/code-bg.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -227,7 +232,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36383" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36417" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
