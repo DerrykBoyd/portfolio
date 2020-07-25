@@ -1,18 +1,57 @@
+/* Add Roboto font and variables */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './variables.css';
+
+/* Debugging */
+/* body * {
+  border: solid 1px green;
+} */
 /* add the code bg */
-body {
+html {
   background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url('/img/code-bg.svg');
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-dark);
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+body {
+  max-width: 1600px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+nav {
   text-align: center;
 }
 
-/* test img style */
-#test-img {
+.hero {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 100px);
+  grid-auto-rows: auto;
+  align-items: center;
+  justify-items: center;
+  padding: 0.5rem;
+  width: calc(100% - 1rem);
+}
+
+.hero-text {
+  font-size: x-large;
+  text-align: center;
+}
+
+#hi-bitmoji {
+  grid-row: span 2;
   width: 200px;
   height: 200px;
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+.todo {
+  text-align: center;
 }

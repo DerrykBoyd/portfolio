@@ -1,0 +1,14 @@
+:root {
+  --text-dark: rgba(0,0,0,0.87);
+  --text-med: rgba(0,0,0,0.6);
+  --text-dis: rgba(0,0,0,0.38);
+  --text-light: rgba(255,255,255,0.87);
+  --text-light-med: rgba(255,255,255,0.6);
+  --text-light-dis: rgba(255,255,255,0.38);
+  --primary: #7E57C2;
+  --primary-light: #B085F5;
+  --primary-dark: #4D2C91;
+  --secondary: #80DEEA;
+  --secondary-light: #B4FFFF;
+  --secondary-dark: #4BACB8;
+}
