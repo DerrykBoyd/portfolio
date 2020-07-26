@@ -131,6 +131,7 @@ nav {
 .project {
   display: flex;
   flex-direction: column;
+  max-width: calc(100vw - 3rem);
 }
 
 .project-title {
