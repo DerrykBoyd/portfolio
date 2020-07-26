@@ -35,7 +35,7 @@
 }
 
 .btn-img {
-  height: 32px;
+  height: 24px;
   padding-left: 0.5rem;
 }
 
@@ -199,7 +199,7 @@ nav {
 }
 
 .project-logo {
-  height: 4rem;
+  height: 3rem;
   padding: 0 0.5rem;
 }
 
@@ -225,7 +225,7 @@ nav {
 }
 
 .project-tech > img {
-  height: 2rem;
+  height: 1.75rem;
   padding: 0 1rem;
 }
 
