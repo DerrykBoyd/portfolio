@@ -162,10 +162,12 @@ nav {
 
 .card-title {
   margin: 0;
+  font-weight: bold;
 }
 
 .card-subtitle {
   font-size: 0.9rem;
+  font-weight: bold;
   margin: 0.5rem 0;
 }
 
