@@ -269,6 +269,10 @@ textarea {
   color: var(--text-med);
 }
 
+.ta-center {
+  text-align: center;
+}
+
 /* Rules for sizing the  material icons. */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }

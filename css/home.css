@@ -1,29 +1,13 @@
 /* Add Roboto font and imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import './variables.css';
-@import './buttons.css';
+@import './common.css';
 @import './animations.css';
 
 /* Debugging */
 /* body * {
   border: solid 1px green;
 } */
-/* add the code bg */
-html {
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url('/img/code-bg.svg');
-  font-family: 'Roboto', sans-serif;
-  color: var(--text-dark);
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.content {
-  max-width: 1600px;
-  padding: 3.5rem 0.5rem 0 0.5rem;
-  margin: auto;
-}
 
 nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
@@ -93,10 +77,6 @@ nav {
   height: 200px;
 }
 
-.todo {
-  text-align: center;
-}
-
 .section-heading {
   color: var(--primary);
   text-align: center;
@@ -134,17 +114,6 @@ nav {
   align-items: stretch;
 }
 
-.card {
-  background-color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
-  border-radius: 2px;
-  padding: 1rem;
-}
-
-.card-text {
-  padding: 0.5rem 0;
-}
-
 .project {
   display: flex;
   flex-direction: column;
@@ -173,17 +142,6 @@ nav {
   justify-content: space-around;
 }
 
-.card-title {
-  margin: 0;
-  font-weight: bold;
-}
-
-.card-subtitle {
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-}
-
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -194,6 +152,28 @@ nav {
 .project-tech > img {
   height: 1.75rem;
   padding: 0.5rem;
+}
+
+.edu-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(calc(380px - 1rem), 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.edu-card {
+  max-width: calc(100vw - 3rem);
+}
+
+.edu-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-text {
+  text-align: center;
 }
 
 @media screen and (max-width: 450px) {
