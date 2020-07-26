@@ -189,6 +189,11 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/buttons.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/animations.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -199,7 +204,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./variables.css":"css/variables.css","./animations.css":"css/animations.css","/home/derryk/Programming/portfolio/img/code-bg.svg":[["code-bg.5a39c725.svg","img/code-bg.svg"],"img/code-bg.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/main.css":[function(require,module,exports) {
+},{"./variables.css":"css/variables.css","./buttons.css":"css/buttons.css","./animations.css":"css/animations.css","/home/derryk/Programming/portfolio/img/code-bg.svg":[["code-bg.5a39c725.svg","img/code-bg.svg"],"img/code-bg.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
