@@ -263,3 +263,6 @@ textarea {
 
 @import './home.css';
 
+.text-ul {
+  text-decoration: underline;
+}

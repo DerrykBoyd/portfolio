@@ -29,6 +29,11 @@ nav {
   padding: 0.5rem 1rem;
 }
 
+.nav-title {
+  font-size: 1.75rem;
+  color: var(--primary);
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -46,7 +51,7 @@ nav {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   width: calc(100% - 2rem);
 }
 
@@ -73,14 +78,44 @@ nav {
   .hero {
     grid-template-columns: 1fr;
   }
-  nav {
-    justify-content: flex-end;
-  }
-  .nav-title {
-    display: none;
+  .nav-title{
+    font-size: 1.25rem;
   }
 }
 
 .todo {
   text-align: center;
+}
+
+.skills {
+  padding: 0 1rem;
+}
+
+.section-heading {
+  color: var(--primary);
+  text-align: center;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+.skill-grid {
+  justify-content: center;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+}
+
+.sk-badge {
+  height: 2rem;
+  margin: 0.5rem;
 }
