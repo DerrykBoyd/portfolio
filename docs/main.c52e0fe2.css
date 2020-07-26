@@ -1,0 +1,524 @@
+:root {
+  --text-dark: rgba(0,0,0,0.87);
+  --text-med: rgba(0,0,0,0.6);
+  --text-dis: rgba(0,0,0,0.38);
+  --text-light: rgba(255,255,255,0.87);
+  --text-light-med: rgba(255,255,255,0.6);
+  --text-light-dis: rgba(255,255,255,0.38);
+  --primary: #7E57C2;
+  --primary-light: #B085F5;
+  --primary-dark: #4D2C91;
+  --secondary: #80DEEA;
+  --secondary-light: #B4FFFF;
+  --secondary-dark: #4BACB8;
+}
+.btn {
+  background-color: var(--primary);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.btn-img {
+  height: 24px;
+  padding-left: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+/* Animation */
+.typewriter{
+  animation: typewriter 2s steps(20, end),
+             blinkTextCursor 750ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: var(--primary);}
+  to{border-right-color: transparent;}
+}
+/* Add Roboto font and imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Debugging */
+/* body * {
+  border: solid 1px green;
+} */
+/* add the code bg */
+html {
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url('/portfolio/code-bg.5a39c725.svg');
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-dark);
+}
+
+body {
+  max-width: 1600px;
+  margin: auto;
+  overflow-x: hidden;
+  padding: 0 0.5rem;
+}
+
+nav {
+  text-align: center;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.nav-title {
+  font-size: 1.75rem;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-link {
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 1fr;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+
+.typewriter {
+  border-right: 3px solid var(--primary);
+  height: 4rem;
+  font-size: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#hi-bitmoji {
+  grid-row: span 2;
+  height: 200px;
+}
+
+.todo {
+  text-align: center;
+}
+
+.section-heading {
+  color: var(--primary);
+  text-align: center;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+.skill-grid {
+  justify-content: center;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+}
+
+.sk-badge {
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(calc(380px - 1rem), 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+.card-text {
+  padding: 0.5rem 0;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100vw - 3rem);
+}
+
+.project-title {
+  display: grid;
+  gap: 1rem;
+  font-size: 1.5rem;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-logo {
+  height: 3rem;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.project-tech > img {
+  height: 1.75rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 450px) {
+  .hero, .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-title{
+    font-size: 1.25rem;
+  }
+}
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.text-ul {
+  text-decoration: underline;
+}
+
+.text-med {
+  color: var(--text-med);
+}
+
+/* Rules for sizing the  material icons. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-32 { font-size: 32px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/*# sourceMappingURL=/portfolio/main.c52e0fe2.css.map */

@@ -97,7 +97,7 @@ nav {
   justify-content: center;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   justify-items: center;
   align-items: center;
 }
@@ -151,6 +151,7 @@ nav {
 .project-logo {
   height: 3rem;
   padding: 0 0.5rem;
+  border-radius: 50%;
 }
 
 .project-links {
@@ -170,13 +171,14 @@ nav {
 
 .project-tech {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: auto;
 }
 
 .project-tech > img {
   height: 1.75rem;
-  padding: 0 1rem;
+  padding: 0.5rem;
 }
 
 @media screen and (max-width: 450px) {
