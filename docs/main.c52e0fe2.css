@@ -113,7 +113,7 @@ nav {
 }
 
 .skills {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .section-heading {
@@ -129,7 +129,7 @@ nav {
   justify-content: center;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   justify-items: center;
   align-items: center;
 }

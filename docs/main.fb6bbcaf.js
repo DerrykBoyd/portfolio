@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/main.js":[function(require,module,exports) {
 // Typewriter on home page
-var greetings = ['Hi there...', 'Salut!  😎', 'Hello  👋', 'Bonjour  🙂'];
+var greetings = ['Hi there 🙂', 'Salut!  😎', 'Hello  👋', 'Bonjour  👋'];
 var typewriter = document.querySelector('.typewriter');
 var greetingNum = 1;
 setInterval(function () {

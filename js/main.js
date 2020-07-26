@@ -1,5 +1,5 @@
 // Typewriter on home page
-const greetings = ['Hi there...', 'Salut!  😎', 'Hello  👋', 'Bonjour  🙂'];
+const greetings = ['Hi there 🙂', 'Salut!  😎', 'Hello  👋', 'Bonjour  👋'];
 const typewriter = document.querySelector('.typewriter');
 let greetingNum = 1;
 
