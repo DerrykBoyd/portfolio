@@ -54,8 +54,11 @@ nav {
   align-content: center;
   align-items: center;
   justify-items: center;
+  justify-content: center;
   padding: 0.5rem 0;
-  width: 100%;
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .hero-text {
