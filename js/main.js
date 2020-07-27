@@ -16,8 +16,8 @@ const education = document.querySelector('#education');
 
 document.addEventListener('scroll', _ => {
   btmNavItems.forEach(item => item.classList.remove('active'))
-  if (window.scrollY < tech.offsetTop) btmNavItems[0].classList.add('active');
-  else if (window.scrollY < projects.offsetTop) btmNavItems[1].classList.add('active');
-  else if (window.scrollY < education.offsetTop) btmNavItems[2].classList.add('active');
+  if (window.scrollY < tech.offsetTop-16) btmNavItems[0].classList.add('active');
+  else if (window.scrollY < projects.offsetTop-16) btmNavItems[1].classList.add('active');
+  else if (window.scrollY < education.offsetTop-16) btmNavItems[2].classList.add('active');
   else btmNavItems[3].classList.add('active');
 })
