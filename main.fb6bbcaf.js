@@ -136,7 +136,7 @@ document.addEventListener('scroll', function (_) {
   btmNavItems.forEach(function (item) {
     return item.classList.remove('active');
   });
-  if (window.scrollY < tech.offsetTop) btmNavItems[0].classList.add('active');else if (window.scrollY < projects.offsetTop) btmNavItems[1].classList.add('active');else if (window.scrollY < education.offsetTop) btmNavItems[2].classList.add('active');else btmNavItems[3].classList.add('active');
+  if (window.scrollY < tech.offsetTop - 16) btmNavItems[0].classList.add('active');else if (window.scrollY < projects.offsetTop - 16) btmNavItems[1].classList.add('active');else if (window.scrollY < education.offsetTop - 16) btmNavItems[2].classList.add('active');else btmNavItems[3].classList.add('active');
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -166,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44197" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36701" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
