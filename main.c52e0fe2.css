@@ -155,9 +155,23 @@ nav {
   align-items: center;
 }
 
+.nav-link {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+.nav-social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .social-link {
   height: 2rem;
-  margin: 0 0.6rem;
+  margin: 0 0.75rem;
 }
 
 .hero {
@@ -196,6 +210,15 @@ nav {
 .section-heading {
   color: var(--primary);
   text-align: center;
+}
+
+.section-heading:before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 0;
+  height: 4rem;
+  margin-top: -4rem;
 }
 
 .sub-heading {
@@ -298,6 +321,12 @@ nav {
   }
   .hero, .project-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-page-links {
+    display: none;
   }
 }
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
