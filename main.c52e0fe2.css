@@ -107,7 +107,7 @@ body {
 /* Animation */
 .typewriter{
   animation: typewriter 2s steps(20, end),
-             blinkTextCursor 750ms steps(44) infinite normal;
+             blinkTextCursor 1000ms steps(44) normal;
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -118,9 +118,10 @@ body {
   to{border-right-color: transparent;}
 }
 /* Add Roboto font and imports */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* Debugging */
+
 /* body * {
   border: solid 1px green;
 } */
@@ -176,6 +177,23 @@ nav {
   margin: 0 0.75rem;
 }
 
+.btm-nav {
+  display: none;
+}
+
+.btm-nav-link {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--text-light-dis);
+}
+
+.btm-nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
   display: grid;
   gap: 1rem;
@@ -198,7 +216,7 @@ nav {
 
 .typewriter {
   border-right: 3px solid var(--primary);
-  height: 4rem;
+  min-height: 4rem;
   font-size: 3rem;
   overflow: hidden;
   white-space: nowrap;
@@ -290,7 +308,7 @@ nav {
   margin-top: auto;
 }
 
-.project-tech > img {
+.project-tech>img {
   height: 1.75rem;
   padding: 0.5rem;
 }
@@ -318,7 +336,7 @@ nav {
 }
 
 @media screen and (max-width: 450px) {
-  .nav-title{
+  .nav-title {
     font-size: 1.25rem;
   }
   .hero, .project-grid {
@@ -329,6 +347,32 @@ nav {
 @media screen and (max-width: 600px) {
   .nav-page-links {
     display: none;
+  }
+  .content {
+    padding-bottom: 4rem;
+    padding-top: 0.5rem;
+  }
+  nav {
+    position: initial;
+  }
+  .btm-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 3.5rem;
+    width: 100vw;
+    background-color: var(--primary-dark);
+  }
+  .active {
+    color: white;
+  }
+  .anchor:before {
+    height: 1rem;
+    margin-top: -1rem;
   }
 }
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */

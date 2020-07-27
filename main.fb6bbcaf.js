@@ -118,17 +118,26 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/main.js":[function(require,module,exports) {
-// Typewriter on home page
-var greetings = ['Hi there 🙂', 'Salut!  😎', 'Hello  👋', 'Bonjour  👋'];
+// hide typewriter on animation end
 var typewriter = document.querySelector('.typewriter');
-var greetingNum = 1;
-setInterval(function () {
-  typewriter.classList.remove('typewriter');
-  void typewriter.offsetWidth;
-  typewriter.classList.add('typewriter');
-  typewriter.innerHTML = greetings[greetingNum % greetings.length];
-  greetingNum++;
-}, 4000);
+typewriter.addEventListener('animationend', function (e) {
+  if (e.animationName === 'typewriter') {
+    setTimeout(function () {
+      e.target.style['border-right-color'] = 'transparent';
+    }, 500);
+  }
+}); // highlight bottom nav based on scroll
+
+var btmNavItems = document.querySelectorAll('.btm-nav-item');
+var tech = document.querySelector('#tech');
+var projects = document.querySelector('#projects');
+var education = document.querySelector('#education');
+document.addEventListener('scroll', function (_) {
+  btmNavItems.forEach(function (item) {
+    return item.classList.remove('active');
+  });
+  if (window.scrollY < tech.offsetTop) btmNavItems[0].classList.add('active');else if (window.scrollY < projects.offsetTop) btmNavItems[1].classList.add('active');else if (window.scrollY < education.offsetTop) btmNavItems[2].classList.add('active');else btmNavItems[3].classList.add('active');
+});
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -157,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39767" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44197" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
