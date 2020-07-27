@@ -13,7 +13,7 @@
     "build": "parcel build *.html --public-url /portfolio/ && npm run copy",
     "dev": "parcel index.html --open --public-url /portfolio/",
     "start": "npm run build && npm run dev",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "copyfiles": "^2.3.0",
