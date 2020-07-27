@@ -9,13 +9,15 @@
   "license": "MIT",
   "author": "Derryk Boyd",
   "scripts": {
-    "copy": "copyfiles robots.txt humans.txt favicon.ico docs",
-    "build": "parcel build *.html -d docs --public-url /portfolio/ && npm run copy",
-    "dev": "parcel index.html -d docs --open --public-url /portfolio/",
-    "start": "npm run build && npm run dev"
+    "copy": "copyfiles robots.txt humans.txt favicon.ico dist",
+    "build": "parcel build *.html --public-url /portfolio/ && npm run copy",
+    "dev": "parcel index.html --open --public-url /portfolio/",
+    "start": "npm run build && npm run dev",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "copyfiles": "^2.3.0",
+    "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4"
   },
   "main": "index.html",
