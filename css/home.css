@@ -29,7 +29,9 @@ nav {
 
 .nav-title {
   font-size: 1.6rem;
+  font-weight: bold;
   margin: 0;
+  text-decoration: none;
   color: var(--primary);
 }
 
@@ -96,7 +98,7 @@ nav {
   text-align: center;
 }
 
-.section-heading:before {
+.anchor:before {
   content: '';
   display: block;
   position: relative;
