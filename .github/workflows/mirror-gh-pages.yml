@@ -1,12 +1,9 @@
 name: Mirror GitHub Pages
 # this workflow mirrors the gh-pages branch to my main gh-pages site
-on:
-  push:
-    branches:
-      - gh-pages
+on: [push]
 
 jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-    - run: echo Hello World
+      - run: echo Hello World
