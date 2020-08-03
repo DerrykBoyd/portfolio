@@ -108,7 +108,7 @@ nav {
 
 #profile-img {
   grid-row: span 2;
-  height: 200px;
+  height: 160px;
   border: solid 3px var(--primary);
   border-radius: 50%;
 }
