@@ -225,13 +225,13 @@ nav {
   width: 100%;
   display: flex;
   padding: 1rem 0;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 .credits {
-  color: var(--primary);
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
 }
 
 .resume-dl {
@@ -244,6 +244,7 @@ nav {
   }
   .credits {
     font-size: 0.9rem;
+    font-weight: normal;
   }
 }
 
@@ -279,5 +280,8 @@ nav {
   .anchor:before {
     height: 1rem;
     margin-top: -1rem;
+  }
+  .credits {
+    display: none;
   }
 }
