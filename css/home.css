@@ -99,18 +99,21 @@ nav {
   font-size: 3rem;
   overflow: hidden;
   white-space: nowrap;
-  margin: 1rem 0;
+  margin: 0;
 }
 
 .profile-img-container {
   grid-row: span 2;
-  
 }
 
 #profile-img {
   height: 160px;
   border: solid 3px var(--primary);
   border-radius: 50%;
+}
+
+.resume-dl {
+  margin: 1rem 0 0 0;
 }
 
 .section-heading {
