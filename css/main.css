@@ -281,3 +281,12 @@ textarea {
 .material-icons.md-48 { font-size: 48px; }
 
 @import './home.css';
+
+/* Remove blue highlight on touch */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
